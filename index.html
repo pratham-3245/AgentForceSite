@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Simple One Page Website</title>
     <style>
         /* Reset some default styles */
@@ -82,6 +82,26 @@
         <p>You can easily customize colors, fonts, or content to make it your own!</p>
         <a href="#" class="button">Learn More</a>
     </main>
+
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL000002KSi9',
+				'External_Service_MS',
+				'https://orgfarm-4545af38bf-dev-ed.develop.my.site.com/ESWExternalServiceMS1761729942793',
+				{
+					scrt2URL: 'https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-4545af38bf-dev-ed.develop.my.site.com/ESWExternalServiceMS1761729942793/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
