@@ -108,21 +108,21 @@
 </html> -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset='UTF-8' />
     <title>Lead Processor LWC Embed</title>
 
     <!-- Load the Lightning Out 2.0 runtime from your org -->
     <script
-      type="text/javascript"
-      async
-      src="https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce-setup.com/lightning/lightning.out.latest/index.iife.prod.js"
+      type='text/javascript'
+      async=''
+      src='https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce-setup.com/lightning/lightning.out.latest/index.iife.prod.js'
     ></script>
 
     <!-- Optional: wait for runtime ready -->
     <script>
-      document.addEventListener("lo-ready", () => {
+      document.addEventListener('lo-ready', () => {
         console.log("Lightning Out runtime initialized");
       });
     </script>
@@ -132,7 +132,7 @@
     <h1>Embedded Salesforce LWC: Lead Processor</h1>
 
     <!-- Lightning Out 2.0 root application declaration -->
-    <lightning-out-application components="c-lead-processor"></lightning-out-application>
+    <lightning-out-application components='c-lead-processor'></lightning-out-application>
 
     <!-- Your actual component placeholder -->
     <c-lead-processor></c-lead-processor>
