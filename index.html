@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -84,11 +84,7 @@
 	
     </main>
 
-		<script type="text/javascript" async="" src="https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js"></script>
-
-<lightning-out-application components="c-lead-processor"></lightning-out-application>
-<c-lead-processor></c-lead-processor>
-    <!-- <script type='text/javascript'>
+    <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -106,7 +102,39 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://orgfarm-4545af38bf-dev-ed.develop.my.site.com/ESWExternalServiceMS1761729942793/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script> -->
+<script type='text/javascript' src='https://orgfarm-4545af38bf-dev-ed.develop.my.site.com/ESWExternalServiceMS1761729942793/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lead Processor LWC Embed</title>
+
+    <!-- Load the Lightning Out 2.0 runtime from your org -->
+    <script
+      type="text/javascript"
+      async
+      src="https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce-setup.com/lightning/lightning.out.latest/index.iife.prod.js"
+    ></script>
+
+    <!-- Optional: wait for runtime ready -->
+    <script>
+      document.addEventListener("lo-ready", () => {
+        console.log("Lightning Out runtime initialized");
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Embedded Salesforce LWC: Lead Processor</h1>
+
+    <!-- Lightning Out 2.0 root application declaration -->
+    <lightning-out-application components="c-lead-processor"></lightning-out-application>
+
+    <!-- Your actual component placeholder -->
+    <c-lead-processor></c-lead-processor>
+  </body>
 </html>
