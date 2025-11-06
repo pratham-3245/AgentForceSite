@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -105,50 +105,4 @@
 <script type='text/javascript' src='https://orgfarm-4545af38bf-dev-ed.develop.my.site.com/ESWExternalServiceMS1761729942793/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8' />
-    <title>Lead Processor LWC Embed</title>
-
-    <!-- Load the Lightning Out 2.0 runtime from your org -->
-    <script
-      type='text/javascript'
-      async=''
-      src='https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce-setup.com/lightning/lightning.out.latest/index.iife.prod.js'
-    ></script>
-
-    <!-- Optional: wait for runtime ready -->
-    <script>
-      document.addEventListener('lo.application.ready', () => {
-        console.log("Lightning Out runtime initialized");
-      });
-    </script>
-  </head>
-
-  <body>
-    <h1>Embedded Salesforce LWC: Lead Processor</h1>
- <c-lead-processor style="--custom-color: brown;">
-    <!-- shadow DOM open -->
-    <iframe>
-      <html>
-        <!-- Salesforce context -->
-        <body>
-          <!-- Lightning web component -->
-          <c-lead-processor style="--custom-color: brown;"></c-lead-processor>
-        </body>
-      </html>
-    </iframe>
-    <!-- shadow DOM close -->
-  </c-lead-processor>
-	  <p>Test Stop</p>
-
-    <!-- Lightning Out 2.0 root application declaration -->
-    <lightning-out-application components='c-lead-processor'></lightning-out-application>
-
-    <!-- Your actual component placeholder -->
-    <c-lead-processor></c-lead-processor>
-  </body>
-</html>
+</html> 
