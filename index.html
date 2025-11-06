@@ -122,7 +122,7 @@
 
     <!-- Optional: wait for runtime ready -->
     <script>
-      document.addEventListener('lo-ready', () => {
+      document.addEventListener('lo.application.ready', () => {
         console.log("Lightning Out runtime initialized");
       });
     </script>
@@ -130,11 +130,19 @@
 
   <body>
     <h1>Embedded Salesforce LWC: Lead Processor</h1>
-<script type="text/javascript" async="" src="https://orgfarm-4545af38bf-dev-ed.develop.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js"></script>
-<p>Test Start</p>
-<lightning-out-application components="c-lead-processor,c-leadprocessor"></lightning-out-application>
-<c-lead-processor></c-lead-processor>
-<c-leadprocessor></c-leadprocessor>
+ <c-lead-processor style="--custom-color: brown;">
+    <!-- shadow DOM open -->
+    <iframe>
+      <html>
+        <!-- Salesforce context -->
+        <body>
+          <!-- Lightning web component -->
+          <c-lead-processor style="--custom-color: brown;"></c-lead-processor>
+        </body>
+      </html>
+    </iframe>
+    <!-- shadow DOM close -->
+  </c-lead-processor>
 	  <p>Test Stop</p>
 
     <!-- Lightning Out 2.0 root application declaration -->
